@@ -1,0 +1,21 @@
+{
+	"name": "bullmq-test",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "npx tsx index.ts",
+		"setup-local-redis": "docker run --name redis -p 6379:6379 -d redis",
+		"shutdown-local-redis": "docker stop redis && docker rm redis"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"bullmq": "^5.12.2"
+	},
+	"devDependencies": {
+		"tsx": "^4.17.0",
+		"typescript": "^5.5.4"
+	}
+}
